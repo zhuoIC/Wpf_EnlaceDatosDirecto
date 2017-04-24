@@ -1,0 +1,10 @@
+﻿<Window x:Class="Wpf_EnlaceDatosDirecto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox Name="tbxOrigen" HorizontalAlignment="Left" Height="23" Margin="130,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="TextBlock" Width="296"/>
+        <TextBlock Name="tblkDestino" Text="{Binding ElementName=tbxOrigen, Path=Text, Mode=Default}" HorizontalAlignment="Left" Margin="130,141,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
